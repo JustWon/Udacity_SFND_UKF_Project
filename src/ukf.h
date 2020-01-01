@@ -41,6 +41,10 @@ class UKF {
    */
   void UpdateRadar(MeasurementPackage meas_package);
 
+  void initializeLidar(MeasurementPackage meas_package);
+  void initializeRadar(MeasurementPackage meas_package);
+  void initializeWeights();
+
 
   // initially set to false, set to true in first call of ProcessMeasurement
   bool is_initialized_;
